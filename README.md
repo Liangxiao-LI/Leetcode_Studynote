@@ -18,5 +18,5 @@
 ### 2. Fast Slow pointer [Q27](https://leetcode.com/problems/remove-element/) [Q26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 
 
 - Application: modify an array based on itself
-- Advantage: finish 2 for loops with 1 for loop
+- Advantage: Time complexity $O(n^2) \to O(n)$ ,finish 2 for loops with 1 for loop
 - Description: Set two variables: Fast=0, Slow=0, then iterate Fast from 0 to the end
