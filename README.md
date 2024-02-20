@@ -6,7 +6,7 @@
 ### 0. General note
 
 + Array[i] [j], i: rows, j: columns
-+ Array[i] [j] [k]: first select the i^th^ term in Array, then apply [j], finally apply [k]
++ Array[i] [j] [k]: first select the $i^{th}$ term in Array, then apply [j], finally apply [k]
 + Use index as pointer
 
 ### 1. Binary Search [Q704](https://leetcode.com/problems/binary-search/description/) [Q35](https://leetcode.com/problems/search-insert-position/submissions/1180827359/)
