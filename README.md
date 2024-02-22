@@ -29,8 +29,10 @@
 - Application: modify an array from two ends
 - Description: Set two variables: Forward_pointer = 0, Backward_pointer = len(nums)
 
-### 4. Sliding window 
+### 4. Sliding window [Q209](https://leetcode.com/problems/minimum-size-subarray-sum/submissions/1182936526/) [Q904 (hash map)](https://leetcode.com/problems/fruit-into-baskets/) 
 
-- 
+- Application: Find a minimum length subarray that satisfy certain property
+- Advantage: Time complexity $O(n^2) \to O(n)$ 
+- Description: Evaluate the region between Forward and Backward pointer
+- Algorithm: 2 whiles
 
-### 
