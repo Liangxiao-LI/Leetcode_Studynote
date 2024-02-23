@@ -41,5 +41,7 @@
 
 ### 5.Spiral Matrix [Q59](https://leetcode.com/problems/spiral-matrix-ii/description/) [Q54](https://leetcode.com/problems/spiral-matrix/) 
 
-- Application
+- Technique: 循环不变量：比如坚持左闭右开
+- Description: iterate around a matrix
+- Algorithm: `for i in range(10,0,-1):`  This will offer i from 10 to 1
 
