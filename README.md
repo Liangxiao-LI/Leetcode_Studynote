@@ -17,6 +17,9 @@
 + Application: Search in ordered array
 + Advantage: Time complexity $O(n) \to O(log_{2}(n))$ 
 + Description: Repeatedly compare the target with the middle value of the ordered array
++ Technique: **循环不变量**, for each loop, some rules should be strictly followed. 
+  + For example, for Binary search, in each while loop we should strictly follow that target lies within [left,mid) or [left,mid] 
+
 
 ### 2. Fast Slow pointer [Q27](https://leetcode.com/problems/remove-element/) [Q26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 
 
@@ -35,4 +38,8 @@
 - Advantage: Time complexity $O(n^2) \to O(n)$ 
 - Description: Evaluate the region between Forward and Backward pointer
 - Algorithm: 2 whiles
+
+### 5.Spiral Matrix [Q59](https://leetcode.com/problems/spiral-matrix-ii/description/) [Q54](https://leetcode.com/problems/spiral-matrix/) 
+
+- Application
 
