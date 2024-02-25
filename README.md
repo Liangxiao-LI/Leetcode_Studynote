@@ -5,11 +5,22 @@
 
 ### 0. General note
 
-+ Array[i] [j], i: rows, j: columns
-+ Array[i] [j] [k]: first select the $i^{th}$ term in Array, then apply [j], finally apply [k]
-+ Use index as pointer
-+ Predefine values as float('inf'), 
-  + ex. result = [float('inf')] * len(nums) , this sets an empty array with length len(nums)
++ (1) Array[i] [j], i: row, j: column
+
+  + Array[i] [j] [k]: first select the $i^{th}$ term in Array, then apply [j], finally apply [k]
+
++ (2) Index start from 0
+
++ (3) Cannot delete value from an array, but can overwrite
+
+  + Technique: Predefine array as `float('inf')`, then overwrite them
+
+    ```python
+    result = [float('inf')] * len(nums) 
+    ```
+
+     The above sets an empty array with length `len(nums)` 
+
 
 
 ### 1. Binary Search [Q704](https://leetcode.com/problems/binary-search/description/) [Q35](https://leetcode.com/problems/search-insert-position/submissions/1180827359/)
@@ -18,30 +29,53 @@
 + Advantage: Time complexity $O(n) \to O(log_{2}(n))$ 
 + Description: Repeatedly compare the target with the middle value of the ordered array
 + Technique: **循环不变量**, for each loop, some rules should be strictly followed. 
-  + For example, for Binary search, in each while loop we should strictly follow that target lies within [left,mid) or [left,mid] 
+  + Ex. in each while loop we should strictly identify whether target lies within [left,mid) or [left,mid] 
 
 
 ### 2. Fast Slow pointer [Q27](https://leetcode.com/problems/remove-element/) [Q26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 
 
-- Application: modify an array based on itself
+- Application: modify an array based on rules on itself
+
 - Advantage: Time complexity $O(n^2) \to O(n)$ ,finish 2 for loops with 1 for loop
-- Description: Set two variables: Fast=0, Slow=0, then iterate Fast from 0 to the end
+
+- Pseudocode: Set two pointers
+
+  ```python
+  Fast_pointer,Slow_pointer = 0,0
+  while Fast_pointer < len(array): #iterate Fast_pointer from 0 to end
+  ```
 
 ### 3. Forward Backward pointer [Q977](https://leetcode.com/problems/squares-of-a-sorted-array/description/) 
 
 - Application: modify an array from two ends
-- Description: Set two variables: Forward_pointer = 0, Backward_pointer = len(nums)
+
+- Pseudocode: Set two variables: Forward_pointer = 0, Backward_pointer = len(nums)
+
+  ```python
+  Fast_pointer,Slow_pointer = 0,len(array) - 1
+  while Fast_pointer < len(array): #iterate pointers from two ends
+  ```
 
 ### 4. Sliding window [Q209](https://leetcode.com/problems/minimum-size-subarray-sum/submissions/1182936526/) [Q904 (hash map)](https://leetcode.com/problems/fruit-into-baskets/) 
 
 - Application: Find a minimum length subarray that satisfy certain property
+
 - Advantage: Time complexity $O(n^2) \to O(n)$ 
-- Description: Evaluate the region between Forward and Backward pointer
-- Algorithm: 2 whiles
+
+- Pseudocode: Evaluate the region between **Fast** and **Slow** pointers
+
+  ```python
+  Fast_pointer,Slow_pointer = 0,0
+  while/if (rule1):
+    Fast_pointer += 1
+    while/if (rule2):
+      Slow_pointer += 1
+  ```
 
 ### 5.Spiral Matrix [Q59](https://leetcode.com/problems/spiral-matrix-ii/description/) [Q54](https://leetcode.com/problems/spiral-matrix/) 
 
-- Technique: 循环不变量：比如坚持左闭右开
-- Description: iterate around a matrix
-- Algorithm: `for i in range(10,0,-1):`  This will offer i from 10 to 1
+- Application: Create Spiral matrix
+- Technique 1: **循环不变量**, for each loop, some rules should be strictly followed. 
+  + Ex. in each loop we iterate clockwise, 左闭右开，上闭下开，右闭左开，下闭上开
+- Technique 2: `for i in range(10,0,-1):`  This will offer i from 10 to 1(右闭左开)
 
