@@ -79,3 +79,26 @@
   + Ex. in each loop we iterate clockwise, 左闭右开，上闭下开，右闭左开，下闭上开
 - Technique 2: `for i in range(10,0,-1):`  This will offer i from 10 to 1(右闭左开)
 
+## Linked List
+
+### 0. General note
+
+```python
+ class ListNode:
+     def __init__(self, val=0, next=None):
+         self.val = val
+         self.next = next
+```
+
+- `_init_` defines the initial state, meaning that the initial `ListNode.val= 0`, and `ListNode.next = None` 
+
+```python
+#Example List Node: 
+ListNode{val: 1, next: ListNode{val: 2, next: ListNode{val: 6, next: ListNode{val: 3, next: ListNode{val: 4, next: ListNode{val: 5, next: ListNode{val: 6, next: None}}}}}}} 
+```
+
+![Screenshot 2024-02-26 at 9.12.22 PM](/Users/ryan/Library/Application Support/typora-user-images/Screenshot 2024-02-26 at 9.12.22 PM.png)
+
+### 1. Removing Elements [Q203](https://leetcode.com/problems/remove-linked-list-elements/) 
+
+- Technique： Dummy_head
