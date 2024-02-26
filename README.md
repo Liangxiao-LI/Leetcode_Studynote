@@ -97,7 +97,8 @@
 ListNode{val: 1, next: ListNode{val: 2, next: ListNode{val: 6, next: ListNode{val: 3, next: ListNode{val: 4, next: ListNode{val: 5, next: ListNode{val: 6, next: None}}}}}}} 
 ```
 
-![Screenshot 2024-02-26 at 9.12.22 PM](/Users/ryan/Library/Application Support/typora-user-images/Screenshot 2024-02-26 at 9.12.22 PM.png)
+<img width="517" alt="Screenshot 2024-02-26 at 10 16 47 PM" src="https://github.com/BL-Starlord/Leetcode_Studynote/assets/81414955/95e6ea02-85cf-4c3d-8e1f-d371795439d3">
+
 
 ### 1. Removing Elements [Q203](https://leetcode.com/problems/remove-linked-list-elements/) 
 
