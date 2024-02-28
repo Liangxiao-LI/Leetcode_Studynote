@@ -103,3 +103,5 @@ ListNode{val: 1, next: ListNode{val: 2, next: ListNode{val: 6, next: ListNode{va
 ### 1. Removing Elements [Q203](https://leetcode.com/problems/remove-linked-list-elements/) 
 
 - Technique： Dummy_head
+
+### 2. 
