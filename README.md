@@ -104,4 +104,11 @@ ListNode{val: 1, next: ListNode{val: 2, next: ListNode{val: 6, next: ListNode{va
 
 - Technique： Dummy_head
 
+```python
+self.dummy_head = ListNode()
+#ListNode generate a standard Node with val = 0, next = None
+```
+
+
+
 ### 2. 
