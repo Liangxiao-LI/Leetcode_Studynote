@@ -108,6 +108,7 @@ ListNode{val: 1, next: ListNode{val: 2, next: ListNode{val: 6, next: ListNode{va
 <img width="517" alt="Screenshot 2024-02-26 at 10 16 47 PM" src="https://github.com/BL-Starlord/Leetcode_Studynote/assets/81414955/95e6ea02-85cf-4c3d-8e1f-d371795439d3">
 
 ```python
+#Example 1
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
         
@@ -146,3 +147,24 @@ dummy_head = ListNode(next = head)
 
 - No Technique, great example
 
+### 4. Swap Nodes Linked List [Q24](https://leetcode.com/problems/swap-nodes-in-pairs/submissions/1193000641/) 
+
+- No Technique, great example
+
+```python
+class Solution:
+    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        pointer = head
+        while pointer:
+            
+            if pointer.next == None:
+                return head
+
+            val2 = pointer.next.val
+            pointer.next.val = pointer.val
+            pointer.val = val2
+            pointer = pointer.next.next
+        return head
+```
+
+- Modify Pointer is also modifying head
