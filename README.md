@@ -108,7 +108,7 @@ ListNode{val: 1, next: ListNode{val: 2, next: ListNode{val: 6, next: ListNode{va
 <img width="517" alt="Screenshot 2024-02-26 at 10 16 47 PM" src="https://github.com/BL-Starlord/Leetcode_Studynote/assets/81414955/95e6ea02-85cf-4c3d-8e1f-d371795439d3">
 
 ```python
-#Example 1
+#Example 1: Variables are references to object values but not containers of the data.
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
         
@@ -128,6 +128,25 @@ class Solution:
   - Here current and dummy_head are two variables that refers to the same object `ListNode()`
   - dummy_head keeps pointing at the very first element of `ListNode()`
   - current is a pointer that moves and modify the object `ListNode()`  
+
+```python
+#Example 2
+class ListNode: 
+        def __init__(self, val=0,next = None):
+                self.val = val
+                self.next = next
+
+head = ListNode(1,ListNode(2,ListNode(3)))
+cur = head
+pre = None
+temp = cur.next
+cur.next = pre
+pre = cur
+cur = temp #! This step won't affect pre
+```
+
+- Can create multiple variables to reference object, but one variable is independent of another variable
+  - Here pre and cur are two variables that both refers to head
 
 
 ### 1. Removing Elements [Q203](https://leetcode.com/problems/remove-linked-list-elements/) 
@@ -151,20 +170,18 @@ dummy_head = ListNode(next = head)
 
 - No Technique, great example
 
-```python
-class Solution:
-    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        pointer = head
-        while pointer:
-            
-            if pointer.next == None:
-                return head
+### 5. Remove Nth Node From End of Linked List [Q19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/1193499537/) 
 
-            val2 = pointer.next.val
-            pointer.next.val = pointer.val
-            pointer.val = val2
-            pointer = pointer.next.next
-        return head
-```
+- Technique:(1) Fast_slow Pointer (2)Dummy_head
 
-- Modify Pointer is also modifying head
+### 6. Intersection of two Linked List [Q160](https://leetcode.com/problems/intersection-of-two-linked-lists/submissions/1193510593/)
+
+- Technique:
+  - (1) Get Linked List length 
+  - (2) `pointerA == pointerB` can be used to identify if two linked lists are exactly the same
+
+### 7. Linked List Cycle [Q142](https://leetcode.com/problems/linked-list-cycle-ii/submissions/1193518167/) (Hard)
+
+- Technique: 
+  - Use Fast_slow Pointer to detect cycle, Fast_pointer will eventually meet slow Pointer
+  - Use mathematical relationship to find the loop starting position(requires a simple proof euqating $2*slow = fast$)
