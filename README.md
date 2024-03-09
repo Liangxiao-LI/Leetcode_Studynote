@@ -185,3 +185,41 @@ dummy_head = ListNode(next = head)
 - Technique: 
   - Use Fast_slow Pointer to detect cycle, Fast_pointer will eventually meet slow Pointer
   - Use mathematical relationship to find the loop starting position(requires a simple proof euqating $2*slow = fast$)
+
+## Hashmap
+
+### 0. General Note
+
+When we encounter the need to quickly determine whether an element appears in a collection, we should consider using hashing.
+
+However, hashing trades space for time because we need to use an extra array, set, or map to store the data to achieve fast lookup.
+
+If you come across a scenario in an interview where you need to determine if an element has appeared before, you should think of hashing first!
+
+#### Useful library: 
+
+```python
+from collections import defaultdict
+
+int_dict = defaultdict(int) # Create a dictionary which contains int
+list_dict = defaultdict(list) # Create a dictionary which contains list
+
+# Example 1:
+s = 'mississippi'
+for k in s:
+  int_dict[k] += 1 
+
+# sorted(int_dict.items()) -> [('i', 4), ('m', 1), ('p', 2), ('s', 4)]
+
+# Example 2:
+s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+for k, v in s:
+    list_dict[k].append(v)
+
+#sorted(list_dict.items()) -> [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
+```
+
+### 1. Valid Anagram [Q242](https://leetcode.com/problems/valid-anagram/) [Q383](https://leetcode.com/problems/ransom-note/) 
+
+- No technique, great example
+
