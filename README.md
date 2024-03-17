@@ -4,7 +4,7 @@ This is my Studynote for Leetcode 😆
 
 Already attempted topics and questions are listed in the table below.
 
-My Python 3 Solutions are attached in the repo.
+My Python 3 Solutions are attached in the repo. Feel free to star or fork to get an update for new question solutions 😉
 
 | Topic                                      | Question                                                     |
 | ------------------------------------------ | ------------------------------------------------------------ |
@@ -25,9 +25,13 @@ My Python 3 Solutions are attached in the repo.
 | Topic 3: Hashmap                           |                                                              |
 | 1) Valid Anagram                           | [Q242](https://leetcode.com/problems/valid-anagram/) [Q383](https://leetcode.com/problems/ransom-note/) |
 
+
+
+------
+
+
+
 [TOC]
-
-
 
 
 ## Topic_1_Array
