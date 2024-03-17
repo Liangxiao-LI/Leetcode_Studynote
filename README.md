@@ -25,8 +25,6 @@ My Python 3 Solutions are attached in the repo.
 | Topic 3: Hashmap                           |                                                              |
 | 1) Valid Anagram                           | [Q242](https://leetcode.com/problems/valid-anagram/) [Q383](https://leetcode.com/problems/ransom-note/) |
 
-### Table of contents
-
 [TOC]
 
 
