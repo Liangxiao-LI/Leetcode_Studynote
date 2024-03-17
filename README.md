@@ -1,5 +1,34 @@
 # Leetcode_Studynote
 
+This is my Studynote for Leetcode 😆 
+
+Already attempted topics and questions are listed in the table below.
+
+My Python 3 Solutions are attached in the repo.
+
+| Topic                                      | Question                                                     |
+| ------------------------------------------ | ------------------------------------------------------------ |
+| Topic 1: Array                             |                                                              |
+| 1) Binary Search                           | [Q704](https://leetcode.com/problems/binary-search/description/) [Q35](https://leetcode.com/problems/search-insert-position/submissions/1180827359/) |
+| 2) Fast Slow pointer                       | [Q27](https://leetcode.com/problems/remove-element/) [Q26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
+| 3) Forward Backward pointer                | [Q977](https://leetcode.com/problems/squares-of-a-sorted-array/description/) |
+| 4) Sliding window                          | [Q209](https://leetcode.com/problems/minimum-size-subarray-sum/submissions/1182936526/) [Q904 (hash map)](https://leetcode.com/problems/fruit-into-baskets/) |
+| 5) Spiral Matrix                           | [Q59](https://leetcode.com/problems/spiral-matrix-ii/description/) [Q54](https://leetcode.com/problems/spiral-matrix/) |
+| Topic 2: Linked List                       |                                                              |
+| 1) Removing Elements                       | [Q203](https://leetcode.com/problems/remove-linked-list-elements/) |
+| 2) Design Linked List                      | [Q707](https://leetcode.com/problems/design-linked-list/description/) |
+| 3) Reverse Linked List                     | [Q206](https://leetcode.com/problems/reverse-linked-list/)   |
+| 4) Swap Nodes Linked List                  | [Q24](https://leetcode.com/problems/swap-nodes-in-pairs/submissions/1193000641/) |
+| 5) Remove Nth Node From End of Linked List | [Q19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/1193499537/) |
+| 6) Intersection of two Linked List         | [Q160](https://leetcode.com/problems/intersection-of-two-linked-lists/submissions/1193510593/) |
+| 7) Linked List Cycle                       | [Q142](https://leetcode.com/problems/linked-list-cycle-ii/submissions/1193518167/) (Hard) |
+| Topic 3: Hashmap                           |                                                              |
+| 1) Valid Anagram                           | [Q242](https://leetcode.com/problems/valid-anagram/) [Q383](https://leetcode.com/problems/ransom-note/) |
+
+
+
+
+
 
 ## Array
 
