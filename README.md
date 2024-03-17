@@ -25,12 +25,14 @@ My Python 3 Solutions are attached in the repo.
 | Topic 3: Hashmap                           |                                                              |
 | 1) Valid Anagram                           | [Q242](https://leetcode.com/problems/valid-anagram/) [Q383](https://leetcode.com/problems/ransom-note/) |
 
+### Table of contents
+
+[TOC]
 
 
 
 
-
-## Array
+## Topic_1_Array
 
 ### 0. General note
 
@@ -108,7 +110,7 @@ My Python 3 Solutions are attached in the repo.
   + Ex. in each loop we iterate clockwise, 左闭右开，上闭下开，右闭左开，下闭上开
 - Technique 2: `for i in range(10,0,-1):`  This will offer i from 10 to 1(右闭左开)
 
-## Linked List （OOP）
+## Topic_2_Linked List （OOP）
 
 ### 0. General note
 
@@ -118,7 +120,7 @@ In programming, Class and Object are fundamental concepts in Object-Oriented Pro
 
 **Object**: An object is an instance created based on the definition of a class. Each object has its own attribute values, which are set according to the class definition. Each time we call `ListNode()` is creating a new `ListNode` object.
 
-#### Code Explanation
+Below are some important code explanations
 
 ```python
  class ListNode:
@@ -215,7 +217,7 @@ dummy_head = ListNode(next = head)
   - Use Fast_slow Pointer to detect cycle, Fast_pointer will eventually meet slow Pointer
   - Use mathematical relationship to find the loop starting position(requires a simple proof euqating $2*slow = fast$)
 
-## Hashmap
+## Topic_3_Hashmap
 
 ### 0. General Note
 
@@ -225,9 +227,8 @@ However, hashing trades space for time because we need to use an extra array, se
 
 If you come across a scenario in an interview where you need to determine if an element has appeared before, you should think of hashing first!
 
-#### Useful library: 
-
 ```python
+#Useful library defaultdict
 from collections import defaultdict
 
 int_dict = defaultdict(int) # Create a dictionary which contains int
