@@ -1,20 +1,22 @@
 # Leetcode_Studynote
 
-This is my Studynote for Leetcode 😆 
+This is my Studynote for already attempted topics and questions in Leetcode 😆 
 
-Already attempted topics and questions are listed in the table below.
+My Python 3 Solutions are attached in the repo. Feel free to star or fork to get an update for new question solutions😉
 
-My Python 3 Solutions are attached in the repo. Feel free to star or fork to get an update for new question solutions 😉
+Please contact me via [Linkedin](https://www.linkedin.com/in/liangxiao-li-5820b21b9/) if you are interested in any Leetcode topics and I'll include them in the future
+
+Currently I'm following the structure from [代码随想录](https://www.programmercarl.com/qita/join.html) , and have included summarized key points in English. Will include more topics as I study along, always welcome all sorts of discussions on potential collaborations, opportunities, or simply sharing insights.
 
 | Topic                                      | Question                                                     |
-| ------------------------------------------ | ------------------------------------------------------------ |
-| Topic 1: Array                             |                                                              |
-| 1) Binary Search                           | [Q704](https://leetcode.com/problems/binary-search/description/) [Q35](https://leetcode.com/problems/search-insert-position/submissions/1180827359/) |
+| :----------------------------------------- | ------------------------------------------------------------ |
+| **Topic 1: Array**                         |                                                              |
+| 1) Binary Search                           | [Q704](https://leetcode.com/problems/binary-search/description/) |
 | 2) Fast Slow pointer                       | [Q27](https://leetcode.com/problems/remove-element/) [Q26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
 | 3) Forward Backward pointer                | [Q977](https://leetcode.com/problems/squares-of-a-sorted-array/description/) |
 | 4) Sliding window                          | [Q209](https://leetcode.com/problems/minimum-size-subarray-sum/submissions/1182936526/) [Q904 (hash map)](https://leetcode.com/problems/fruit-into-baskets/) |
 | 5) Spiral Matrix                           | [Q59](https://leetcode.com/problems/spiral-matrix-ii/description/) [Q54](https://leetcode.com/problems/spiral-matrix/) |
-| Topic 2: Linked List                       |                                                              |
+| **Topic 2: Linked List**                   |                                                              |
 | 1) Removing Elements                       | [Q203](https://leetcode.com/problems/remove-linked-list-elements/) |
 | 2) Design Linked List                      | [Q707](https://leetcode.com/problems/design-linked-list/description/) |
 | 3) Reverse Linked List                     | [Q206](https://leetcode.com/problems/reverse-linked-list/)   |
@@ -22,8 +24,9 @@ My Python 3 Solutions are attached in the repo. Feel free to star or fork to get
 | 5) Remove Nth Node From End of Linked List | [Q19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/1193499537/) |
 | 6) Intersection of two Linked List         | [Q160](https://leetcode.com/problems/intersection-of-two-linked-lists/submissions/1193510593/) |
 | 7) Linked List Cycle                       | [Q142](https://leetcode.com/problems/linked-list-cycle-ii/submissions/1193518167/) (Hard) |
-| Topic 3: Hashmap                           |                                                              |
+| **Topic 3: Hashmap**                       |                                                              |
 | 1) Valid Anagram                           | [Q242](https://leetcode.com/problems/valid-anagram/) [Q383](https://leetcode.com/problems/ransom-note/) |
+| 2) Intersection of Two Arrays              | [Q349](https://leetcode.com/problems/intersection-of-two-arrays/) [Q350](https://leetcode.com/problems/intersection-of-two-arrays-ii/) |
 
 
 
