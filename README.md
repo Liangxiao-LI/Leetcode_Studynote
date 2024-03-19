@@ -255,3 +255,11 @@ for k, v in s:
 
 - No technique, great example
 
+### 2. Intersection of Two Arrays [Q349](https://leetcode.com/problems/intersection-of-two-arrays/) 
+
+```python
+int_dict = defaultdict(int)
+list(int_dict.keys()) #returns all keys in a list
+for key in int_dict: #iterate over the keys in the dictionary
+```
+

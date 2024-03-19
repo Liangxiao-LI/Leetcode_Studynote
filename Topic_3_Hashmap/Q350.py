@@ -1,0 +1,24 @@
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        int_dict1 = defaultdict(int)
+        int_dict2 = defaultdict(int)
+        for n in nums1:
+            int_dict1[n] += 1
+        
+        for n in nums2:
+            int_dict2[n] += 1
+
+        set1 = set(int_dict1.keys())
+        set2 = set(int_dict2.keys())
+        common_elements = list(set1.intersection(set2))
+
+        result = []
+
+        for common in common_elements:
+            if int_dict1[common] > int_dict2[common]:
+                for i in range(int_dict2[common]):
+                    result.append(common)
+            else:
+                for i in range(int_dict1[common]):
+                    result.append(common)
+        return result

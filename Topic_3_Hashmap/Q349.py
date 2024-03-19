@@ -11,7 +11,7 @@ class Solution:
 
         result = []
 
-        for key in list(int_dict.keys()):
+        for key in int_dict:
             if int_dict[key] == 2:
                 result.append(key)
         return result
