@@ -253,13 +253,29 @@ for k, v in s:
 
 ### 1. Valid Anagram [Q242](https://leetcode.com/problems/valid-anagram/) [Q383](https://leetcode.com/problems/ransom-note/) 
 
-- No technique, great example
+```python
+s_dict == t_dict # identify if two dictionaries are the same
+```
 
-### 2. Intersection of Two Arrays [Q349](https://leetcode.com/problems/intersection-of-two-arrays/) 
+### 2. Intersection of Two Arrays [Q349](https://leetcode.com/problems/intersection-of-two-arrays/) [Q350](https://leetcode.com/problems/intersection-of-two-arrays-ii/)  
 
 ```python
 int_dict = defaultdict(int)
-list(int_dict.keys()) #returns all keys in a list
+int_dict['a'],int_dict['b'],int_dict['c'] = 5,3,10
+print(int_dict) # defaultdict(<class 'int'>, {'a': 5, 'b': 3, 'c': 10})
+print(int_dict.keys()) #dict_keys(['a', 'b', 'c'])
+print(list(int_dict.keys()))#['a', 'b', 'c']
+print(set(int_dict.keys())) #{'b', 'c', 'a'}
+print(set(int_dict)) #{'b', 'c', 'a'}
 for key in int_dict: #iterate over the keys in the dictionary
+```
+
+Special technique:
+
+```python
+#Find the intersection of two keys
+set1 = set(int_dict1)
+set2 = set(int_dict2)
+common_elements = list(set1.intersection(set2))
 ```
 
