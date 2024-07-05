@@ -11,20 +11,16 @@ class Solution(object):
         """
         
         sum1 = defaultdict(int)
-        sum2 = defaultdict(int)
 
         for i in nums1:
             for j in nums2:
                 sum1[i+j] += 1
-        for i in nums3:
-            for j in nums4:
-                sum2[i+j] += 1
 
         ans = 0
 
-        for key1 in sum1:
-            for key2 in sum2:
-                if key1+key2 == 0:
-                    ans+= sum1[key1]*sum2[key2]
+        for n3 in nums3:
+            for n4 in nums4:
+                if -n3-n4 in sum1:
+                    ans += sum1[-n3-n4]
         
         return ans
