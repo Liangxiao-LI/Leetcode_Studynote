@@ -62,8 +62,16 @@ Currently I'm following the structure from [代码随想录](https://www.program
 ### 1. Binary Search [Q704](https://leetcode.com/problems/binary-search/description/) [Q35](https://leetcode.com/problems/search-insert-position/submissions/1180827359/)
 
 + Application: Search in ordered array
-+ Advantage: Time complexity $O(n) \to O(log_{2}(n))$ 
+
 + Description: Repeatedly compare the target with the middle value of the ordered array
+
+  ```python
+  arr = [5, 2, 9, 1, 5, 6]
+  sorted_arr = sorted(arr)
+  ```
+
+  
+
 + Technique: **循环不变量**, for each loop, some rules should be strictly followed. 
   + Ex. in each while loop we should strictly identify whether target lies within [left,mid) or [left,mid] 
 
@@ -72,7 +80,7 @@ Currently I'm following the structure from [代码随想录](https://www.program
 
 - Application: modify an array based on rules on itself
 
-- Advantage: Time complexity $O(n^2) \to O(n)$ ,finish 2 for loops with 1 for loop
+- Advantage: Time complexity $O(n^2) \to O(n)$ ,finish 2 **for loops** with 1 **for loop**
 
 - Pseudocode: Set two pointers
 

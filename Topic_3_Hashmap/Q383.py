@@ -16,3 +16,12 @@ class Solution:
                 return False
         
         return True
+    
+nums = [1,2,3,4]
+
+len(nums)
+
+for i in range(len(nums)):
+    print(i)
+
+5 //2
